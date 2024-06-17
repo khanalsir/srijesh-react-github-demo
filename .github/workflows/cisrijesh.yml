@@ -22,17 +22,14 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Display current directory
-      run: pwd
-
-    - name: List files in the working directory
-      run: ls -la
+    - name: Navigate to project directory
+      run: cd srijesh-react-assign2
 
     - name: Install dependencies
-      run: npm install
+      run: cd srijesh-react-assign2 && npm install
 
     - name: Run tests
-      run: npm test
+      run: cd srijesh-react-assign2 && npm test
 
     - name: Build project
-      run: npm run build
+      run: cd srijesh-react-assign2 && npm run build
