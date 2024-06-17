@@ -20,7 +20,10 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20' # Specifies Node.js version 20
+        node-version: '20'
+
+    - name: Display files in the working directory
+      run: ls -la
 
     - name: Install dependencies
       run: npm install
