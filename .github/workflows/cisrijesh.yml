@@ -22,7 +22,10 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Display files in the working directory
+    - name: Display current directory
+      run: pwd
+
+    - name: List files in the working directory
       run: ls -la
 
     - name: Install dependencies
